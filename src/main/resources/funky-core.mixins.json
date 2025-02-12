@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "net.funkystudios.funkycore.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExampleMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "ItemRendererMixin",
+    "ModelLoaderMixin"
+  ]
+}

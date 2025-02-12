@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "funky-core:raw_turquoise_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "funky-core:raw_turquoise"
+  }
+}

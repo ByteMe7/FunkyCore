@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "funky-core:raw_turquoise"
+  },
+  "result": {
+    "count": 1,
+    "id": "funky-core:turquoise"
+  }
+}

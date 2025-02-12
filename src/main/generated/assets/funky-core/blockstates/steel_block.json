@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "funky-core:block/steel_block"
+    }
+  }
+}

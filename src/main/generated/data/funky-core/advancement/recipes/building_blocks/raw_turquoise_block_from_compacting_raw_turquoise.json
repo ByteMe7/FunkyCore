@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_turquoise": {
+      "conditions": {
+        "items": [
+          {
+            "items": "funky-core:raw_turquoise"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_raw_turquoise_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "funky-core:raw_turquoise_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:raw_turquoise_block_from_compacting_raw_turquoise"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_turquoise_block",
+      "has_raw_turquoise"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:raw_turquoise_block_from_compacting_raw_turquoise"
+    ]
+  }
+}

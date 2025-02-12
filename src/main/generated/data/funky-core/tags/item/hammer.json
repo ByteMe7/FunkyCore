@@ -1,0 +1,12 @@
+{
+  "values": [
+    "funky-core:iron_hammer",
+    "funky-core:steel_hammer",
+    "funky-core:diamond_hammer",
+    "funky-core:turquoise_hammer",
+    "funky-core:stone_hammer",
+    "funky-core:gold_hammer",
+    "funky-core:netherite_hammer",
+    "funky-core:wooden_hammer"
+  ]
+}

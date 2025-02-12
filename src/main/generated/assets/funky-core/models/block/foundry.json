@@ -1,0 +1,7 @@
+{
+  "parent": "funky-core:block/front_face",
+  "textures": {
+    "layer0": "funky-core:block/foundry",
+    "particle": "funky-core:block/foundry"
+  }
+}

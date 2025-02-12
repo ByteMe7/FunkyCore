@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "funky-core:turquoise_block"
+    },
+    "-": {
+      "item": "funky-core:turquoise"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "-#-",
+    " | ",
+    " | "
+  ],
+  "result": {
+    "count": 1,
+    "id": "funky-core:turquoise_hammer"
+  }
+}
