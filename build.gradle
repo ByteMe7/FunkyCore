@@ -20,6 +20,9 @@ repositories {
 		name = "TerraformersMC"
 		url = 'https://maven.terraformersmc.com/'
 	}
+	maven {
+		url "https://maven.shedaniel.me"
+	}
 }
 
 fabricApi {
@@ -38,6 +41,12 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation "com.terraformersmc.terraform-api:terraform-wood-api-v1:${project.terraform_wood_api_version}"
 	include modApi("teamreborn:energy:${project.energy_version}")
+	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}"){
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+
+	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}"
+	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}"
 	
 }
 
@@ -84,8 +93,8 @@ publishing {
 			name = "GitHubPackages"
 			url = uri("https://maven.pkg.github.com/ByteMe7/FunkyCore")
 			credentials {
-				username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
-				password = project.findProperty("gpr.token") ?: System.getenv("GITHUB_TOKEN")
+				username = System.getenv("GITHUB_USERNAME").toString()
+				password = System.getenv("GITHUB_TOKEN").toString()
 			}
 		}
 	}
